@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int i,players,runs[5],inn[5],notout[5],average[5];
+char name[20][5];
+cout<<"Enter number of players:";
+cin>>players;
+for(i=1;i<=players;i++)
+{
+cout<<"Input details of player no. "<<i<<endl;
+cout<<"Name: ";
+cin>>name[i];
+cout<<"No. of runs made: ";
+cin>>runs[i];
+cout<<"No. of innings played: ";
+cin>>inn[i];
+cout<<"Times not out: ";
+cin>>notout[i];
+}
+for(i=1;i<=players;i++)
+{
+average[i]=runs[i]/inn[i];
+}
+cout<<"\nName\tRuns\tInnings\tTimes not out\tAverage"<<endl;
+for(i=1;i<=players;i++)
+{
+cout<<name[i]<<"\t"<<runs[i]<<"\t"<<inn[i]<<"\t"<<notout[i]<<"\t\t"<<average[i]<<endl;
+}
+return 0;
+}
