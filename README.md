@@ -1,2 +1,2 @@
-# C-program
+# C++ -program
 Some programs are from C++
